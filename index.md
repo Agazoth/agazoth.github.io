@@ -1,16 +1,9 @@
-<html>
+## Welcome my Powershell Blog
 
-<head>
-  <title>Welcome my Powershell Blog</title>
-</head>
-
-<body>
-<p>Here you will find random ramblings about my daily Powershell voyages.</p> 
+Here you will find random ramblings about my daily Powershell voyages. 
 
 
-<ul class="posts">
+
         {% for post in site.posts %}
           <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
-      </ul>
-</body>
