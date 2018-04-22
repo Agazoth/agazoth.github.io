@@ -4,15 +4,20 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm a Azure Consultant with a severe crush on Powershell. I strongly believe, that almost any workload can be moved to a Cloud service. Wether that service is Azure, AWS or Google Cloud is of less importance, since they all are accessible via my favorite tool.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+If you don't trust the Cloud, you most certainly still need to automate a lot of tasks, if you don't want to drown in next-clicking. Powershell is the perfect tool for automating anything based on Microsoft platforms. It can even automate anyhing on any other platofrm, as long as it has some sort of interface.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I have automated tons of stuff with Powershell. Just to name a few:
+* Lotus Notes
+* Entrust
+* SharePoint
+* Office 365
+* AX2012
+* Cisco
+* Various websites
+* Mainframe
+* Filesystem
+* Acive Directory
 
-
-[jekyll-organization]: https://github.com/jekyll
+Actually I'm pretty sure that, if you can click it, I can automate it.
