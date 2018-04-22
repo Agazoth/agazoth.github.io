@@ -4,11 +4,11 @@ title:  "Welcome to Jekyll!"
 date:   2018-04-22 07:45:02 +0200
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+I spend this weekend making a blog page for posting my random Powershell scribblings. Since all help in Powershell is to be written in markdown, I thought it would be a good idea to make the page as markdown close as possible.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Github provides a perfect platform for this purpose. Using github for the page also places the blog closer to the Gists and Repositories used in the blog anyway.
 
-Jekyll also offers powerful support for code snippets:
+Cute little demo of what markdown and Github Pages can do for Powershellers:
 
 {% highlight powershell %}
 Get-Process Powershell
@@ -19,8 +19,18 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
     525      41   101308      47988      17,94   6544   4 powershell
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Getting this fra was as hard a journey as any other involving getting to know new concepts and new notations.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+I had a detour around a local Jekyll server. Since I work on a Windows 10 machine, that involved installing Debian on the Linux Subsystem. The [guide](https://jekyllrb.com/docs/windows/) for that, which I found after installing Debian, is actually quite exact. It starts with "is not officailly supported on Windows" disclaimer and continues with YOU SHOULD USE UBUNTU - Dang!
+
+Well, couldn't be bothered with changing the distro and continued with the guide. After what seemed an eternity of installing and updating gems and Jekyll, I ended u with a local server, where I could test my new page, prior to publication.
+
+Unfortunately my local server was not aware of the themes in Github, and I ended up calling it a day, before I had anything working.
+
+New day, new plan. I decided to post publish directly to Github from VS Code. That worked quite a lot better. I started out with the cayman theme, but no matter what I tried, I had no luck making the site blog aware. The front page worked, and that was it.
+
+Even though I do not have a lot of hair, I had even less after spending a few hours trying to make the blogpart work. Eventually I gave up, and changed the theme to minima, by copying the index.md, about.md, _config.yml and the _posts folder with content to my site, replacing all existing files, and suddenly my blogfiles were there.
+
+For some reason there was no footer displaying my Twitter and Github pages. After a lot of playing around with the -layout files from the minima theme, I realized, that if you include these files in your own build, they override the ones in the gem. Then I remembered, that I at some poiunt had placed a blank footer.html file in the _includes folder. I deleted the file and presto, the footer was on all my pages.
+
+I'm certain I'll have lots of fun and hours of frustration playing around with markdown and Githug!
