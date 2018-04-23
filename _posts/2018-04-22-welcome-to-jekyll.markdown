@@ -19,7 +19,7 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
     525      41   101308      47988      17,94   6544   4 powershell
 {% endhighlight %}
 
-Getting this fra was as hard a journey as any other involving getting to know new concepts and new notations.
+Getting this far was as hard a journey as any other involving getting to know new concepts and new notations.
 
 I had a detour around a local Jekyll server. Since I work on a Windows 10 machine, that involved installing Debian on the Linux Subsystem. The [guide](https://jekyllrb.com/docs/windows/) for that, which I found after installing Debian, is actually quite exact. It starts with "is not officailly supported on Windows" disclaimer and continues with YOU SHOULD USE UBUNTU - Dang!
 
