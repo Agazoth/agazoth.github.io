@@ -43,5 +43,7 @@ Docker will ask you to share the drive referenced in the command:
 Give it your credentials:
 ![dockersharecredentials]({{ site.url }}/images/dockersharecredential.png)
 
-Docker will start to pull the container. Once it is done, you can browse your new Jekyll theme offline:
+Docker will start to pull the container. The container is usualy always up to date and is maintained by the super cool  [Jordan Bedwell](https://twitter.com/envygeeks) [here](https://github.com/envygeeks/jekyll-docker)
+
+Once it is done, you can browse your new Jekyll theme offline:
 ![hackerlocal]({{ site.url }}/images/hackerlocal.png)
