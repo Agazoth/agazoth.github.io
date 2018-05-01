@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-04-22 07:45:02 +0200
-categories: jekyll update
+categories: blogpost
 ---
 I spend this weekend making a blog page for posting my random Powershell scribblings. Since all help in Powershell is to be written in markdown, I thought it would be a good idea to make the page as markdown close as possible.
 
@@ -33,4 +33,4 @@ Even though I do not have a lot of hair, I had even less after spending a few ho
 
 For some reason there was no footer displaying my Twitter and Github pages. After a lot of playing around with the -layout files from the minima theme, I realized, that if you include these files in your own build, they override the ones in the gem. Then I remembered, that I at some poiunt had placed a blank footer.html file in the _includes folder. I deleted the file and presto, the footer was on all my pages.
 
-I'm certain I'll have lots of fun and hours of frustration playing around with markdown and Githug!
+I'm certain I'll have lots of fun and hours of frustration playing around with markdown and Github!
