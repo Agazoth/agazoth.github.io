@@ -100,7 +100,17 @@ You are all set and good to go. Now you can install any module available to you 
 $MyModule = "Replace with your module"
 if (!$(Test-Path $(Join-Path $PSLocalModulePath $MyModule))){
     Write-Output "Installing $MyModule"
-    Install-Module $MyModule -Scope CurrentUser -Force
+    try {
+        Install-Module $MyModule -Scope CurrentUser -Force
+    }
+    catch {
+        try {
+            # for some reason AzureRM modules are picky. If you got one installed, the others can only be copied to the folder.
+            Save-Module $MyModule -Path $PSLocalModulePath
+        } catch {
+            Write-Output $error[0].tostring()
+        }
+    }
 }
 ```
 
