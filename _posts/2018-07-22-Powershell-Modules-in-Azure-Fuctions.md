@@ -104,7 +104,7 @@ if (!$(Test-Path $(Join-Path $PSLocalModulePath $MyModule))){
 }
 ```
 
-# Conclusion
+## Conclusion
 
 The beauty of this method is, that you don't have to hassle with FTP, Kudu, Visual Studio, VSTS or any of the other fine tools used for putting stuff to your Azure Function.
 
