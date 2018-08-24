@@ -5,7 +5,16 @@ date:   2018-08-25 09:00:28 +0200
 categories: blogpost
 ---
 # Exported Commands
-Yesterday I uploaded a new module to the Powershell Gallery. I use the non-monolithic style, where the different functions in the module are dot-sourced in the psm1 and finally run Export-ModuleMember on functions and cmdlets in the module.
+Yesterday I uploaded a new module to the Powershell Gallery. I use the non-monolithic style, where the different functions in the module are dot-sourced in the psm1 and finally run Export-ModuleMember on functions and cmdlets in the module. My psm1 file looks a bit like this:
+```Powershell
+$Public  = Get-ChildItem $PSScriptRoot\*.ps1 -ErrorAction SilentlyContinue
+
+ Foreach($import in @($Public)){
+    . $import.fullname
+}
+    
+Export-ModuleMember -Function $($Public | Select-Object -ExpandProperty BaseName)
+```
 
 This method has been working just fine, but after uploading my working module and installing it again from the gallery, I realized, that no ExportedCommands were available.
 
