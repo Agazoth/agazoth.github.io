@@ -4,7 +4,6 @@ title:  "AxSQLServerCe Module"
 date:   2018-08-23 20:52:28 +0200
 categories: blogpost
 ---
-# AxSQLServerCe Module
 Today our developers introduced a new (old) database type in one of their applications. So far the only skill required was a little SQL and SSMS, but this was a different beast.
 
 SQL Server Compact shares a common API with the other Microsoft SQL Server editions. It is based on a single sdf file and is very lightweight. It is also depricated, but will remain in standard life cycle with support end in 2021.
