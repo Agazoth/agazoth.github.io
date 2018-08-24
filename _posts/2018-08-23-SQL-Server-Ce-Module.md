@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SQL Server Ce Module"
+title:  "AxSQLServerCe Module"
 date:   2018-08-23 20:52:28 +0200
 categories: blogpost
 ---
