@@ -193,7 +193,7 @@ The questions remains:
 
 Of course best practice is to specify the FunctionsToExport by name and I will be changing by build process as soon as I have a few hours to update the process, but this is still kind of a breaking change, if it is in fact caused by different WPS versions.
 
-# The solution
+# The solution (for Computer 1)
 After yet another test, it turns out, that the autoload of modules starts working if Import-Module is run after Install-Module. That will also make the CmdLets available in new consoles, even after reboot.
 
 Furthermore it seems like Windows Updates (Computer 1 is on fast) resets the imported modules that have * in FunctionsToExport, making a new Import-Module required before the module autoloads correctly.
@@ -205,3 +205,5 @@ Import-Module ONCE
 The module gets loaded every time you start a new console
 
 It would be cool, if Install-Module ran Import-Module after installing the module :-)
+
+This does not work on Computer 2, which again points the suspicion at the WPS versions.
