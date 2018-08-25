@@ -203,3 +203,5 @@ For Autoload to work:
 Copy modulefolder to $env:PSModulePath/Install from PSGallery
 Import-Module ONCE
 The module gets loaded every time you start a new console
+
+It would be cool, if Install-Module ran Import-Module after installing the module :-)
