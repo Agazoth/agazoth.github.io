@@ -32,13 +32,11 @@ And assign some artifacts to it:
 
 Quickly add a resource group and a template - for a quick test [this one](https://github.com/Azure/azure-quickstart-templates/blob/master/101-storage-account-create/azuredeploy.json) will do just fine.
 
-![ResourcegroupsAndTemplates]({{ site.url }}/images/rgandtemplate.png)
+![ResourcegroupsAndTemplates]({{ site.url }}/images/rgandtemplate.PNG)
 
 Give your Blueprint a version number and publish it:
 
-![Publish]({{ site.url }}/images/publish.png)
-
-Now you're ready to assign your Blueprint to any subscription(s) you like.
+![Publish]({{ site.url }}/images/publish.PNG)
 
 But where is the fun in that? And, even more important, where is the CI/CD and source control in in this approach?
 
@@ -88,7 +86,7 @@ You should start by creating a folder. The folder name will become the name of y
 
 Open your favorite json template editor. I prefer VS Code and I like to open my Blueprint folder, so I only see the Blueprint I am working on:
 
-![code]({{ site.url }}/images/code.png)
+![code]({{ site.url }}/images/code.PNG)
 
 If you want to test how easy it is to create a new Azure Blueprint, just go ahead and add the code below to your Blueprint folder:
 
@@ -106,7 +104,7 @@ Now you can head over to your Azure Portal and find your Blueprint draft named V
 
 And if you edit the Vanilla Draft, you will se, that the artifact has the json template you just published:
 
-![VanillaEdit]({{ site.url }}/images/editvanilla.png)
+![VanillaEdit]({{ site.url }}/images/editvanilla.PNG)
 
 But what you can't see in the GUI, is the additional information in the original json templates. This information, however, will be revealed, if you retrieve the templates with the apropriate cmdlets in Powershell:
 
