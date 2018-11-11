@@ -32,7 +32,7 @@ And assign some artifacts to it:
 
 Quickly add a resource group and a template - for a quick test [this one](https://github.com/Azure/azure-quickstart-templates/blob/master/101-storage-account-create/azuredeploy.json) will do just fine.
 
-![Resourcegroups and Templates]({{ site.url }}/images/rgandtemplate.png)
+![ResourcegroupsAndTemplates]({{ site.url }}/images/rgandtemplate.png)
 
 Give your Blueprint a version number and publish it:
 ![Publish]({{ site.url }}/images/publish.png)
