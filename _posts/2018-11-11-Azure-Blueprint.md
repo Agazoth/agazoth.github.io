@@ -24,7 +24,7 @@ Of cource there is a nice GUI in the portal:
 
 And of course you can create a new Blueprint in the portal:
 
-![New Blueprint Definition]({{ site.url }}images/newblueprintdef.png)
+![New Blueprint Definition]({{ site.url }}/images/newblueprintdef.png)
 
 And assign some artifacts to it:
 
