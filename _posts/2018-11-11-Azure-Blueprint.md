@@ -30,12 +30,12 @@ And assign some artifacts to it:
 
 ![Artifacts]({{ site.url }}/images/artifacts.png)
 
-Quickly add a resource group and a template - for a quick test [this one]("https://github.com/Azure/azure-quickstart-templates/blob/master/101-storage-account-create/azuredeploy.json") will do just fine.
+Quickly add a resource group and a template - for a quick test [this one](https://github.com/Azure/azure-quickstart-templates/blob/master/101-storage-account-create/azuredeploy.json) will do just fine.
 
-![Artifacts]({{ site.url }}/images/rgandtemplate.png)
+![Resourcegroups and Templates]({{ site.url }}/images/rgandtemplate.png)
 
 Give your Blueprint a version number and publish it:
-![Publish]({{ site.url }}images/publish.png)
+![Publish]({{ site.url }}/images/publish.png)
 
 Now you're ready to assign your Blueprint to any subscription(s) you like.
 
@@ -47,7 +47,7 @@ There are a few pre-requisites. You should have the latest version of AzureRM.Re
 
 If we are to automate Azure Blueprint we have to be able to mainpulate the blueprints form the commandline. An easy way to get started with this is to use Powershell and the AxAzureBlueprint module.
 
-If you areinterested in the sourcecode for this project, it can be found [here]("https://github.com/Agazoth/AzureBlueprint")
+If you areinterested in the sourcecode for this project, it can be found [here](https://github.com/Agazoth/AzureBlueprint)
 
 The module can be installed form the Powershell Gallery, by running:
 
@@ -87,7 +87,7 @@ You should start by creating a folder. The folder name will become the name of y
 
 Open your favorite json template editor. I prefer VS Code and I like to open my Blueprint folder, so I only see the Blueprint I am working on:
 
-![code]({{ site.url }}images/code.png)
+![code]({{ site.url }}/images/code.png)
 
 If you want to test how easy it is to create a new Azure Blueprint, just go ahead and add the code below to your Blueprint folder:
 
@@ -101,11 +101,11 @@ Set-AzureBlueprint -BlueprintFolder C:\Dev\Vanilla
 
 Now you can head over to your Azure Portal and find your Blueprint draft named Vanilla with one artifact called artifact:
 
-![VanillaDraft]({{ site.url }}images/vanilladraft.png)
+![VanillaDraft]({{ site.url }}/images/vanilladraft.png)
 
 And if you edit the Vanilla Draft, you will se, that the artifact has the json template you just published:
 
-![VanillaEdit]({{ site.url }}images/editvanilla.png)
+![VanillaEdit]({{ site.url }}/images/editvanilla.png)
 
 But what you can't see in the GUI, is the additional information in the original json templates. This information, however, will be revealed, if you retrieve the templates with the apropriate cmdlets in Powershell:
 
