@@ -10,7 +10,7 @@ At Ignite 2018 Microsoft presented Azure Blueprint for the first time. Azure Blu
 
 Furthermore Azure Blueprint enables you to update security and other features on all deployments of the Blueprint, making it easy to maintain policies and security in a large Enterprise environment with many subscriptions in different environments.
 
-To get started, you need to organize your subscriptions in Management Groups. That is easily done, if you follow the documentation provided [here]("https://docs.microsoft.com/en-us/azure/governance/management-groups/create")
+To get started, you need to organize your subscriptions in Management Groups. That is easily done, if you follow the documentation provided [here](https://docs.microsoft.com/en-us/azure/governance/management-groups/create)
 
 Once your Root Management Group is set up, you are ready to start using Azure Blueprints.
 
