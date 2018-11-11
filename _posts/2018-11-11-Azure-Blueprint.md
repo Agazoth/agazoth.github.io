@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Azure Blueprint"
-date:   2018-11-11 08:00:28 +0200
+date:   2018-11-11 08:00:28 +0100
 categories: blogpost
 ---
 # Azure Blueprint - the easy way
