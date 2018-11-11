@@ -35,6 +35,7 @@ Quickly add a resource group and a template - for a quick test [this one](https:
 ![ResourcegroupsAndTemplates]({{ site.url }}/images/rgandtemplate.png)
 
 Give your Blueprint a version number and publish it:
+
 ![Publish]({{ site.url }}/images/publish.png)
 
 Now you're ready to assign your Blueprint to any subscription(s) you like.
@@ -47,7 +48,7 @@ There are a few pre-requisites. You should have the latest version of AzureRM.Re
 
 If we are to automate Azure Blueprint we have to be able to mainpulate the blueprints form the commandline. An easy way to get started with this is to use Powershell and the AxAzureBlueprint module.
 
-If you areinterested in the sourcecode for this project, it can be found [here](https://github.com/Agazoth/AzureBlueprint)
+If you are interested in the sourcecode for this project, it can be found [here](https://github.com/Agazoth/AzureBlueprint)
 
 The module can be installed form the Powershell Gallery, by running:
 
