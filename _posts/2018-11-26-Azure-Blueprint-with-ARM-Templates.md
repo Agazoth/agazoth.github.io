@@ -5,6 +5,7 @@ date:   2018-11-26 21:00:00 +0100
 categories: blogpost
 ---
 # Azure Blueprint with ARM Templates
+
 If you have been implementing Azure environments with ARM Templates, you probably have your own library with polished and shiny templates with lots of fine tuned parameters.
 
 These ARM Templates can now be imported directly into an Azure Blueprint with the Import-AzureBlueprintArtifact cmdlet and then pushed directly to any given Management Group by using my AxAzureBlueprint Module [Azure Blueprint - the easy way](2018-11-11-Azure-Blueprint.md) or simply run:
@@ -14,6 +15,7 @@ Install-Module AxAzureBlueprint
 ```
 
 ## Adding an ARM Template
+
 Start out by creating an empty folder - the folder name will become the name of your Blueprint.
 
 ```powershell
@@ -73,4 +75,5 @@ Publish the Blueprint and enjoy your fine parameters from your original ARM Temp
 ![ARM Blueprint]({{ site.url }}/images/batchdetails.png)
 
 ## Conclusion
+
 I believe this makes Azure Blueprints very accessible and usefull. Please give it a spin and let me know, if you encounter any bugs or have any feature requests.
