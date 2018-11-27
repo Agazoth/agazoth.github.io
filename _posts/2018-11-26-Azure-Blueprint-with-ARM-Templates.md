@@ -8,7 +8,7 @@ categories: blogpost
 
 If you have been implementing Azure environments with ARM Templates, you probably have your own library with polished and shiny templates with lots of fine tuned parameters.
 
-These ARM Templates can now be imported directly into an Azure Blueprint with the Import-AzureBlueprintArtifact cmdlet and then pushed directly to any given Management Group by using my AxAzureBlueprint Module [Azure Blueprint - the easy way](Azure-Blueprint.md) or simply run:
+These ARM Templates can now be imported directly into an Azure Blueprint with the Import-AzureBlueprintArtifact cmdlet and then pushed directly to any given Management Group by using my AxAzureBlueprint Module [Azure Blueprint - the easy way](_posts/Azure-Blueprint.md) or simply run:
 
 ```powershell
 Install-Module AxAzureBlueprint
