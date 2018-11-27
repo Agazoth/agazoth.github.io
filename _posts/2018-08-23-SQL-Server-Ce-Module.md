@@ -13,6 +13,7 @@ You can install a free GUI to manipulate the database [here](https://sourceforge
 But that will not put the data in your pipeline!
 
 I whipped up a module to start working with the new files. Please feel free to download or contribute [here](https://github.com/Agazoth/AxSQLServerCe.git) or just install it directly from the Powershell Gallery:
+
 ```Powershell
 Install-Module AxSQLServerCe -Scope CurrentUser
 ```
