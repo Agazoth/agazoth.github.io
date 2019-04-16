@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using Cosmos DB im PowerApps - part 1"
-date:   2050-12-31 13:00:28 +0100
+date:   2018-12-31 13:00:28 +0100
 categories: blogpost
 ---
 # Introduction
@@ -116,11 +116,8 @@ As you can see in the image, the Flow GUI is a bit inconsistent when adding stri
 
 Now save your Flow and test it:
 
+And this is when my experiment went south! Apparently Flow only lets you configure 1 connection. All orher connections fall bact to the first 1 and produces errors.
 
-## PowerApps
+# Conclusion
 
-|Date|Custome|Purpose|From|To|Distance|
-|---|:---|:---|:---|:---|:---|
-|blah|Blah|Blah|Blahblahblahblah|blah|blah|
-
-# Future additions
+Unless you have no access to Logic Apps in Azure, which ofcourse everyone with a credit  card has, you should absolutely do all your logic in Logic Apps. You still need Flow to breach PowerApps and Logic Apps, since there is no connector to PowerApps in Logic Apps.
