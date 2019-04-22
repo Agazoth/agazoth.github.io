@@ -53,25 +53,25 @@ Now you might want to rename your connection. For some reason this cannot be don
 
 Click on your connection and click on the Edit button. Once again you need to supply the key:
 
-![Rename connection]({{ site.url }}/images/renamecdb.jpg))
+![Rename connection]({{ site.url }}/images/renamecdb.jpg)
 
 Now go to Flows:
 
-![Go to Flows]({{ site.url }}/images/gotoflow.jpg))
+![Go to Flows]({{ site.url }}/images/gotoflow.jpg)
 
 Create a new Flow (Choose Create from blank twice :-)):
 
-![New Flow]({{ site.url }}/images/newflow.jpg))
+![New Flow]({{ site.url }}/images/newflow.jpg)
 
-![New Flow]({{ site.url }}/images/2new.jpg))
+![New Flow]({{ site.url }}/images/2new.jpg)
 
 Kick off your Flow with a PowerApp trigger:
 
-![Name Flow]({{ site.url }}/images/patrigger.jpg))
+![Name Flow]({{ site.url }}/images/patrigger.jpg)
 
 Give your Flow a name. This flow is supposed to create a document, so I call it SetCosmosDBDocument:
 
-![New Flow]({{ site.url }}/images/nameflow.jpg))
+![New Flow]({{ site.url }}/images/nameflow.jpg)
 
 Now comes the tricky part. When running the PowerApp, you need to feed the Flow information. This is done by sending one or more strings to the Flow.
 
@@ -81,23 +81,23 @@ You will need some kind of delimiter for this to work. I use the [scarab (¤)](h
 
 Add a Initialize Variable to your Flow. You need a string variable a cool name and content from the PowerApp (you might need to click "see more" to get the Ask in PowerApps option). Place your curcer in the Value box and click Ask in PowerApps:
 
-![String variable]({{ site.url }}/images/strvar.jpg))
+![String variable]({{ site.url }}/images/strvar.jpg)
 
 Now add a new step. This time you use a Initialize Variable and split the string you collected in the previous step, here you need the scarab:
 
-![Array variable]({{ site.url }}/images/arrayvar.jpg))
+![Array variable]({{ site.url }}/images/arrayvar.jpg)
 
 Now it is time to connect to the Cosmos DB. Add a new step and choose Create or Update Document from Azure Cosmos DB:
 
-![Cosmos DB Step]({{ site.url }}/images/cosmoscreate.jpg))
+![Cosmos DB Step]({{ site.url }}/images/cosmoscreate.jpg)
 
 Fill in the database connection info - if you cannot find your database in the dropdown, you probably needs to change to the correct connection:
 
-![Cosmos DB Step 1]({{ site.url }}/images/cdbstep1.jpg))
+![Cosmos DB Step 1]({{ site.url }}/images/cdbstep1.jpg)
 
 Now update your document JSON with the strings from your array:
 
-![Cosmos DB Step 2]({{ site.url }}/images/cdbstep2.jpg))
+![Cosmos DB Step 2]({{ site.url }}/images/cdbstep2.jpg)
 
 My string is usualy constructed with the elements from this JSON body in the same order as the JSON body, ie. my string in this case is made up of data like this:
 

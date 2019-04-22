@@ -4,7 +4,7 @@ title:  "Powershell Modules in Azure Functions"
 date:   2018-07-22 08:34:28 +0200
 categories: blogpost
 ---
-# Setting up the environment
+## Setting up the environment
 
 Until recently, adding modules to Azure Powershell based Functions has been a real drag.
 
