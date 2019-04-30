@@ -289,3 +289,5 @@ Deploy the function to Azure once again by clicking the deploy button. This time
 ![Azure Tools Azure Function Module]({{ site.url }}/images/afmodule4.jpg)
 
 As easy as that!
+
+This walkthrough is meant to be a quick-start on Powershell Azure Functions. All production workloads should be implemented with source control and CI/CD pipelines.
