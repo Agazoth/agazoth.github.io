@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Save JSON Object in Azure Key VAult"
+title: "Save JSON Object in Azure Key Vault"
 date:   2019-9-17 17:00:28 +0200
 categories: blogpost
 ---
