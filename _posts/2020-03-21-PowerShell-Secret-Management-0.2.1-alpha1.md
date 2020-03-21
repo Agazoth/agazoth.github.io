@@ -56,6 +56,7 @@ In all the cmdlets this has been changed, so you have to add the $VaultName para
         [hashtable] $AdditionalParameters
     )
 ```
+Now you can just reference the $VaultName directly in your code.
 
 In the Get-SecretInfo cmdlet a new object type has been implemented. If you do not adapt to this, you cannot use your extension. Before the change you could go like this, when you output your SecretInfo:
 
@@ -86,6 +87,6 @@ Install-Module -Name Microsoft.PowerShell.SecretManagement -AllowPrerelease
 Install-Module -Name AxKeyVaultExtension
 ```
 
-Check out my post [here]({{ site.url }}/_posts/2020-02-09-PowerShell-Secrets-Management.md) on how to use it.
+Check out my post [here](https://agazoth.github.io/blogpost/2020/02/09/PowerShell-Secrets-Management.html) on how to use it.
 
-Finally a HUGE thanks to the team behind PowerShell Secret Management!
+Finally a HUGE thanks to the team behind PowerShell Secret Management! Make sure to read about all their updates to the module [here](https://devblogs.microsoft.com/powershell/secret-management-preview-2-release/), [here](https://devblogs.microsoft.com/powershell/secrets-management-module-vault-extensions/) and [here](https://github.com/PowerShell/Modules).
