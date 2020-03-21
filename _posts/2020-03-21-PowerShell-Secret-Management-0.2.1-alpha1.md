@@ -7,14 +7,14 @@ categories: blogpost
 
 ## Introduction
 
-After running the PowerShell SecretsManagement module for 1½ month, I'm already quire addicted. It has never been easier storing and retrieving your secret and credentials in PowerShell either locally or in Azure.
+After running the PowerShell SecretsManagement module for 1½ month, I'm already quite addicted. It has never been easier storing and retrieving your secret and credentials in PowerShell either locally or in Azure.
 
 I am a heavy user of secrets stored in Azure and I run my Azure Key Vault extension all the time getting and setting keys in different subscriptions and different customer tenants.
 
 Of course I needed to update to the newest release: PowerShell Secret Management 0.2.1-alpha1 and as promised, this version contains breaking changes. It took a little time to adjust the code in my extension to play nice with the new build and the following walkthrough hopefully makes it easier for other extension makers.
 
 ## Renaming 
- First off the name has changed from PowerShell Secret**s** Management to PowerShell Secret Management - the plural s is gone and proper naming convention is followed - jay :-)
+ First off the name has changed from PowerShell Secret**s** Management to PowerShell Secret Management - the plural s is gone and proper naming convention is followed - yay :-)
 
 To overcome this you have to rename the files and folders in the extension like this:
 
