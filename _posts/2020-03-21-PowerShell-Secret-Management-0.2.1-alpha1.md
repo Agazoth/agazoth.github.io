@@ -45,7 +45,7 @@ In the previous release you had the following param block:
 ```
 When you wanted to reference the Vault name, you could go for:
 ```powershell
-$AdditionalParameters.Vault
+$AdditionalParameters.VaultName
 ```
 
 In all the cmdlets this has been changed, so you have to add the $VaultName parameter in the param block like this:
