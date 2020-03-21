@@ -86,4 +86,6 @@ Install-Module -Name Microsoft.PowerShell.SecretManagement -AllowPrerelease
 Install-Module -Name AxKeyVaultExtension
 ```
 
-Check out my post [here]({{ site.url }}/_posts/2020-02-09-PowerShell-Secrets-Management.md) on how to use it:
+Check out my post [here]({{ site.url }}/_posts/2020-02-09-PowerShell-Secrets-Management.md) on how to use it.
+
+Finally a HUGE thanks to the team behind PowerShell Secret Management!
