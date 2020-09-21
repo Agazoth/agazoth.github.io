@@ -211,5 +211,4 @@ Storing and retrieving secrets in Azure is easy! You can use this method to acce
 There are a few quirks though:
 
 * You will have to update your credentials every now and then (every 3 months)
-* The PSKeyVaultSecret output type will be changing. AxKeyVault uses the output and thus will be deprecated in version 3.0.0. AxKeyVAult will be updated as soon as more information is available.
 * Some key vaults do not work with this method. I only encountered this on key vaults created with very old versions of Ax.KeyVault.
