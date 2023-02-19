@@ -7,7 +7,7 @@ categories: blogpost
 
 # Introduction
 
-This [Microsoft.PowerShell.SceretManagement](https://github.com/PowerShell/SecretManagement) extension is for cloud architects, who often access multiple secrets on multiple subscriptions in multiple tenants and everyone else interested in keeping secrets secret in Azure Key Vault.
+This [Microsoft.PowerShell.SecretManagement](https://github.com/PowerShell/SecretManagement) extension is for cloud architects, who often access multiple secrets on multiple subscriptions in multiple tenants and everyone else interested in keeping secrets secret in Azure Key Vault.
 
 The benefits of Microsoft.PowerShellSecretManagement is that all the nice things you know from PowerShell like tab-completion and well-known switches is wrapped around the extensions.
 
