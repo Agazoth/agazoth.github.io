@@ -10,7 +10,7 @@ When working with the Partner Center API, you sometimes stumble upon some very o
 
 Due to recent progressions in our current project, I found this again, after having forgotten all about it in many sprints:
 
-![TokenToPartnerCenter](../images/tokenToPartnerCenter.png)
+![TokenToPartnerCenter]({{ site.url }}/images/tokenToPartnerCenter.png)
 
 [Link to page (contents might change)](https://learn.microsoft.com/en-us/partner-center/developer/get-delegated-admin-relation-statistics)
 
