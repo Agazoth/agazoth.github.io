@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "MicrosoftPartnerTokenIssues"
+title: "Microsoft Partner Token Issues"
 date:   2023-05-26 08:00:28 +0000
 categories: blogpost
 ---
 
-# Microsoft Partner API TokenIssues
 
 When working with the Partner Center API, you sometimes stumble upon some very obscure documentation.
 
