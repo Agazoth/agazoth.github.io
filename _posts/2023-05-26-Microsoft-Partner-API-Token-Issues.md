@@ -16,7 +16,7 @@ Due to recent progressions in our current project, I found this again, after hav
 
 I remember that, many sprints ago, I tried to generate this token. Looking back in my repos, I found the code that made it generate a valid token.
 
-The trained eye quickly realizes, that the first line (the one beginning with POST) it the uri you have to call to get the token.
+The trained eye quickly realizes, that the first line (the one beginning with POST) is the uri you have to call to get the token.
 
 Logic dictates, that the rest must be the body.
 
