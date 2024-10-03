@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PSParquet Exporting Complex Event Logs"
-date:   2024-10-03 08:00:28 +0000
+date:   2024-10-03 06:00:28 +0000
 categories: blogpost
 ---
 
