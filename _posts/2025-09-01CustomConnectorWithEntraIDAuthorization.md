@@ -79,7 +79,7 @@ __Authentication type__: OAuth 2.0
 
 __Identity Provider__: Azure Active Directory
 
-__Client ID__: The Application (Clinet) ID of the new App Registration you have created.
+__Client ID__: The Application (Client) ID of the new App Registration you have created.
 
 __Client secret__: The secret you created for the application
 
@@ -103,7 +103,7 @@ Copy the Redirect URL
 
 ## Update the App Registration
 
-Go to your App Registration in the Azure Portal and select Aauthentication -> Add a platform
+Go to your App Registration in the Azure Portal and select Authentication -> Add a platform
 
 ![alt text]({{ site.url }}/images/CCWEIDA-image-12.png)
 
@@ -159,7 +159,7 @@ To test the implementation you need to punch in a prompt that inspires the Agent
 
 ![alt text]({{ site.url }}/images/CCWEIDA-image-24.png)
 
-You need to click Allow to grant the agent the right to use your credentials to contact the Custom connector. This will allow your agent to execute the Customen connector and get a response from your MCP Server
+You need to click Allow to grant the agent the right to use your credentials to contact the Custom connector. This will allow your agent to execute the Custom connector and get a response from your MCP Server
 
 ![alt text]({{ site.url }}/images/CCWEIDA-image-25.png)
 
