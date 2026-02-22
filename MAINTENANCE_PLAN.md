@@ -44,8 +44,10 @@
 4. [x] Add a minimal GitHub Actions workflow to build on push/PR.
 
 ### Phase 3: Modernize Safely (1-2 Weeks)
-1. Create upgrade branch for `github-pages` and related gems.
-2. Update dependencies incrementally; run build after each bump.
+1. [x] Create upgrade branch for `github-pages` and related gems.
+2. [~] Update dependencies incrementally; run build after each bump.
+   - First bump completed: `github-pages` 197 -> 231
+   - Validation completed: `bundle exec jekyll build` successful after upgrade
 3. Check rendering diffs for posts/layout includes.
 4. Deploy after content + visual verification.
 
