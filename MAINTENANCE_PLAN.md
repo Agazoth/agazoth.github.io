@@ -45,14 +45,30 @@
 
 ### Phase 3: Modernize Safely (1-2 Weeks)
 1. [x] Create upgrade branch for `github-pages` and related gems.
-2. [~] Update dependencies incrementally; run build after each bump.
+2. [x] Update dependencies incrementally; run build after each bump.
    - First bump completed: `github-pages` 197 -> 231
    - Second bump completed: added `faraday-retry` to address Faraday v2 retry warning
+   - Remaining dependency check: `bundle outdated --strict` reports bundle up to date
    - Validation completed: `bundle exec jekyll build` successful after upgrade
-3. Check rendering diffs for posts/layout includes.
+3. [x] Check rendering diffs for posts/layout includes.
    - Verified `_site/index.html`, `_site/feed.xml`, `_site/ads.txt`, `_site/app-ads.txt` are generated.
    - Verified header nav shows only About/Links and no Maintenance Plan link.
-4. Deploy after content + visual verification.
+   - Verified all 21 source posts render under `_site/blogpost/...`.
+4. [ ] Deploy after content + visual verification.
+
+#### Production Deploy Verification Checklist
+- [ ] Push branch and merge/deploy to GitHub Pages source branch.
+- [ ] Wait for Pages build to complete successfully.
+- [ ] Verify homepage loads: `https://agazoth.github.io/`
+- [ ] Verify feed loads: `https://agazoth.github.io/feed.xml`
+- [ ] Verify ad files load:
+   - `https://agazoth.github.io/ads.txt`
+   - `https://agazoth.github.io/app-ads.txt`
+- [ ] Verify internal docs are not published:
+   - `https://agazoth.github.io/README.html` returns not found
+   - `https://agazoth.github.io/MAINTENANCE_PLAN.html` returns not found
+- [ ] Verify header navigation includes only About and Links.
+- [ ] Spot-check latest 3 posts under `/blogpost/...` paths.
 
 ### Phase 4: Ongoing Maintenance (Monthly)
 1. Dependency refresh check.
