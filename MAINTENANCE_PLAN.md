@@ -13,11 +13,12 @@
 ### Platform / Build
 - Site is a Jekyll + Minima blog with Ruby/Bundler build scripts in `script/`.
 - Dependency stack is very old (`github-pages` lockfile resolves to Jekyll 3.7.4 / Minima 2.5.0).
-- Local build was not possible on this machine because `bundle` is not installed.
+- Local build is now validated with Ruby 2.7 + Bundler (`bundle exec jekyll build`).
 
 ### Repo Hygiene
 - Added a minimal CI workflow to verify root ad files are present.
-- Project README is currently the upstream Minima theme README, not site-specific operational docs.
+- Added a CI workflow to run Jekyll build on push/PR.
+- Project README is now a site-specific operations runbook.
 - Site config now has production `url` set to `https://agazoth.github.io`.
 
 ### Content / Operations
@@ -37,10 +38,10 @@
 4. Confirm analytics/comments behavior in production.
 
 ### Phase 2: Recover Build Reliability (This Week)
-1. Install Ruby + Bundler on your workstation.
-2. Run `bundle install` and `bundle exec jekyll build`.
-3. Document local setup and deploy steps in README.
-4. Add a minimal GitHub Actions workflow to build on push/PR.
+1. [x] Install Ruby + Bundler on your workstation.
+2. [x] Run `bundle install` and `bundle exec jekyll build`.
+3. [x] Document local setup and deploy steps in README.
+4. [x] Add a minimal GitHub Actions workflow to build on push/PR.
 
 ### Phase 3: Modernize Safely (1-2 Weeks)
 1. Create upgrade branch for `github-pages` and related gems.

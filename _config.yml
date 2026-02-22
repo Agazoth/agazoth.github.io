@@ -24,6 +24,10 @@ url: "https://agazoth.github.io" # the base hostname & protocol for your site, e
 twitter_username: agazoth
 github_username: agazoth
 
+header_pages:
+  - about.md
+  - links.md
+
 
 # Build settings
 markdown: kramdown
