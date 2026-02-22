@@ -62,6 +62,7 @@ Helper scripts:
 - [script/bootstrap](script/bootstrap)
 - [script/server](script/server)
 - [script/build](script/build)
+- [script/monthly-check.ps1](script/monthly-check.ps1)
 
 ## Publishing
 
