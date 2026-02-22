@@ -17,7 +17,16 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
-          bundler-cache: true
+          bundler-cache: false
+
+      - name: Update RubyGems (Ruby 2.7 compatible)
+        run: |
+          gem install rubygems-update -v 3.4.22
+          update_rubygems --no-document
+          gem --version
+
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
 
       - name: Build site
         run: bundle exec jekyll build
