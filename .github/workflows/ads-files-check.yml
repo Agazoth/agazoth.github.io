@@ -1,0 +1,23 @@
+name: Root ad files check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  verify-ad-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify root ad files exist
+        run: |
+          test -f ads.txt
+          test -f app-ads.txt
+
+      - name: Verify ads.txt has expected format token
+        run: |
+          grep -q "DIRECT" ads.txt

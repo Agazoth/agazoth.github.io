@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Automating everything from Azure to the basement using Powershell.
   If you can do it in a GUI, you can do it in Powershell.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://agazoth.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: agazoth
 github_username: agazoth
 
