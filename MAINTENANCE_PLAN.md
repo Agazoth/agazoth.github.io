@@ -47,6 +47,7 @@
 1. [x] Create upgrade branch for `github-pages` and related gems.
 2. [~] Update dependencies incrementally; run build after each bump.
    - First bump completed: `github-pages` 197 -> 231
+   - Second bump completed: added `faraday-retry` to address Faraday v2 retry warning
    - Validation completed: `bundle exec jekyll build` successful after upgrade
 3. Check rendering diffs for posts/layout includes.
 4. Deploy after content + visual verification.

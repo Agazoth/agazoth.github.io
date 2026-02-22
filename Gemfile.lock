@@ -45,6 +45,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
+    faraday-retry (2.4.0)
+      faraday (~> 2.0)
     ffi (1.17.2)
     ffi (1.17.2-x64-mingw32)
     forwardable-extended (2.6.0)
@@ -275,6 +277,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  faraday-retry
   github-pages
 
 BUNDLED WITH
