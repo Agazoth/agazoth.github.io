@@ -50,6 +50,8 @@
    - Second bump completed: added `faraday-retry` to address Faraday v2 retry warning
    - Validation completed: `bundle exec jekyll build` successful after upgrade
 3. Check rendering diffs for posts/layout includes.
+   - Verified `_site/index.html`, `_site/feed.xml`, `_site/ads.txt`, `_site/app-ads.txt` are generated.
+   - Verified header nav shows only About/Links and no Maintenance Plan link.
 4. Deploy after content + visual verification.
 
 ### Phase 4: Ongoing Maintenance (Monthly)
