@@ -24,19 +24,19 @@ Personal Jekyll blog source for https://agazoth.github.io.
 
 Prerequisites:
 
-- Ruby 2.7 (recommended for current `github-pages` lockfile)
+- Ruby 3.3 (recommended for current secure dependency lockfile)
 - Bundler
 
 Windows install example:
 
 ```powershell
-winget install --id RubyInstallerTeam.RubyWithDevKit.2.7 --exact --accept-package-agreements --accept-source-agreements
+winget install --id RubyInstallerTeam.RubyWithDevKit.3.3 --exact --accept-package-agreements --accept-source-agreements
 ```
 
 If Ruby is installed but not available in the current terminal, prepend PATH for this session:
 
 ```powershell
-$env:Path = 'C:\Ruby27-x64\bin;' + $env:Path
+$env:Path = 'C:\Ruby33-x64\bin;' + $env:Path
 ```
 
 Install dependencies:
@@ -62,6 +62,7 @@ Helper scripts:
 - [script/bootstrap](script/bootstrap)
 - [script/server](script/server)
 - [script/build](script/build)
+- [script/monthly-check.ps1](script/monthly-check.ps1)
 
 ## Publishing
 
@@ -91,4 +92,4 @@ If `bundle` is not recognized:
 3. Run `gem install bundler`.
 4. Run `bundle install`.
 
-If you installed multiple Ruby versions, ensure Ruby 2.7 is first in PATH before running Jekyll commands.
+If you installed multiple Ruby versions, ensure Ruby 3.3 is first in PATH before running Jekyll commands.

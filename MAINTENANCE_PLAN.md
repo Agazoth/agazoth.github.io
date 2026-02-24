@@ -13,7 +13,7 @@
 ### Platform / Build
 - Site is a Jekyll + Minima blog with Ruby/Bundler build scripts in `script/`.
 - Dependency stack is very old (`github-pages` lockfile resolves to Jekyll 3.7.4 / Minima 2.5.0).
-- Local build is now validated with Ruby 2.7 + Bundler (`bundle exec jekyll build`).
+- Local build is now validated with Ruby 3.3 + Bundler (`bundle exec jekyll build`).
 
 ### Repo Hygiene
 - Added a minimal CI workflow to verify root ad files are present.
@@ -48,33 +48,52 @@
 2. [x] Update dependencies incrementally; run build after each bump.
    - First bump completed: `github-pages` 197 -> 231
    - Second bump completed: added `faraday-retry` to address Faraday v2 retry warning
+   - Security bump completed: `faraday` 2.8.1 -> 2.14.1 and `nokogiri` 1.15.7 -> 1.19.1
+   - Security mitigation completed: `minima.gemspec` Bundler dev dependency updated to `~> 2.1.0`
    - Remaining dependency check: `bundle outdated --strict` reports bundle up to date
    - Validation completed: `bundle exec jekyll build` successful after upgrade
 3. [x] Check rendering diffs for posts/layout includes.
    - Verified `_site/index.html`, `_site/feed.xml`, `_site/ads.txt`, `_site/app-ads.txt` are generated.
    - Verified header nav shows only About/Links and no Maintenance Plan link.
    - Verified all 21 source posts render under `_site/blogpost/...`.
-4. [ ] Deploy after content + visual verification.
+4. [x] Deploy after content + visual verification.
 
 #### Production Deploy Verification Checklist
-- [ ] Push branch and merge/deploy to GitHub Pages source branch.
-- [ ] Wait for Pages build to complete successfully.
-- [ ] Verify homepage loads: `https://agazoth.github.io/`
-- [ ] Verify feed loads: `https://agazoth.github.io/feed.xml`
-- [ ] Verify ad files load:
+- [x] Push branch and merge/deploy to GitHub Pages source branch.
+- [x] Wait for Pages build to complete successfully.
+- [x] Verify homepage loads: `https://agazoth.github.io/`
+- [x] Verify feed loads: `https://agazoth.github.io/feed.xml`
+- [x] Verify ad files load:
    - `https://agazoth.github.io/ads.txt`
    - `https://agazoth.github.io/app-ads.txt`
-- [ ] Verify internal docs are not published:
+- [x] Verify internal docs are not published:
    - `https://agazoth.github.io/README.html` returns not found
    - `https://agazoth.github.io/MAINTENANCE_PLAN.html` returns not found
-- [ ] Verify header navigation includes only About and Links.
-- [ ] Spot-check latest 3 posts under `/blogpost/...` paths.
+- [x] Verify header navigation includes only About and Links.
+- [x] Spot-check latest 3 posts under `/blogpost/...` paths.
 
 ### Phase 4: Ongoing Maintenance (Monthly)
 1. Dependency refresh check.
 2. Broken-link scan and feed/homepage check.
 3. Validate analytics/ad file/comment integrations.
 4. Publish at least one maintenance note/changelog entry.
+
+Default monthly command:
+
+`$env:Path = 'C:\Ruby33-x64\bin;' + $env:Path; .\script\monthly-check.ps1`
+
+#### Monthly Runbook Checklist (copy each month)
+- [ ] Run `bundle outdated --strict` and note changes.
+- [ ] Run `bundle exec jekyll build` locally.
+- [ ] Verify production endpoints:
+   - [ ] `https://agazoth.github.io/`
+   - [ ] `https://agazoth.github.io/feed.xml`
+   - [ ] `https://agazoth.github.io/ads.txt`
+   - [ ] `https://agazoth.github.io/app-ads.txt`
+- [ ] Verify internal docs are still excluded from publish.
+- [ ] Check latest post page renders correctly.
+- [ ] Review CI workflow results for the month.
+- [ ] Add a short maintenance note to repo history.
 
 ## Acceptance Criteria
 
