@@ -13,7 +13,7 @@
 ### Platform / Build
 - Site is a Jekyll + Minima blog with Ruby/Bundler build scripts in `script/`.
 - Dependency stack is very old (`github-pages` lockfile resolves to Jekyll 3.7.4 / Minima 2.5.0).
-- Local build is now validated with Ruby 2.7 + Bundler (`bundle exec jekyll build`).
+- Local build is now validated with Ruby 3.3 + Bundler (`bundle exec jekyll build`).
 
 ### Repo Hygiene
 - Added a minimal CI workflow to verify root ad files are present.
@@ -48,6 +48,8 @@
 2. [x] Update dependencies incrementally; run build after each bump.
    - First bump completed: `github-pages` 197 -> 231
    - Second bump completed: added `faraday-retry` to address Faraday v2 retry warning
+   - Security bump completed: `faraday` 2.8.1 -> 2.14.1 and `nokogiri` 1.15.7 -> 1.19.1
+   - Security mitigation completed: `minima.gemspec` Bundler dev dependency updated to `~> 2.1.0`
    - Remaining dependency check: `bundle outdated --strict` reports bundle up to date
    - Validation completed: `bundle exec jekyll build` successful after upgrade
 3. [x] Check rendering diffs for posts/layout includes.
@@ -78,7 +80,7 @@
 
 Default monthly command:
 
-`$env:Path = 'C:\Ruby27-x64\bin;' + $env:Path; .\script\monthly-check.ps1`
+`$env:Path = 'C:\Ruby33-x64\bin;' + $env:Path; .\script\monthly-check.ps1`
 
 #### Monthly Runbook Checklist (copy each month)
 - [ ] Run `bundle outdated --strict` and note changes.

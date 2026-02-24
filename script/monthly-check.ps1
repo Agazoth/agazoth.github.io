@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [string]$BaseUrl = "https://agazoth.github.io",
-    [string]$RubyBin = "C:\Ruby27-x64\bin",
+    [string]$RubyBin = "C:\Ruby33-x64\bin",
     [switch]$SkipBundleOutdated,
     [switch]$SkipBuild,
     [switch]$FailOnOutdated
@@ -48,6 +48,10 @@ function Get-StatusCode {
 
 if (Test-Path $RubyBin) {
     $env:Path = "$RubyBin;$env:Path"
+}
+elseif (Test-Path "C:\Ruby27-x64\bin") {
+    Write-Host "Ruby path '$RubyBin' not found; falling back to C:\Ruby27-x64\bin" -ForegroundColor Yellow
+    $env:Path = "C:\Ruby27-x64\bin;$env:Path"
 }
 
 Invoke-Step -Name "Ruby available" -Script {
